@@ -16,15 +16,9 @@ This is a Python script to automate the creation of accounts on the ElevenLabs w
 This script requires Python 3.7+ and the following Python packages, which are listed in the `requirements.txt` file:
 
 ```makefile
-argparse==1.4.0
-requests==2.26.0
-beautifulsoup4==4.10.0
-selenium==3.141.0
-TempMail==1.2.3
-time==1.0
-re==2.2.1
-random==1.0.1
-string==1.0.0
+beautifulsoup4==4.12.2
+selenium==4.9.1
+tempmail-lol==2.0.0
 tqdm==4.62.2
 ```
 
