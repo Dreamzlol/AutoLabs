@@ -13,6 +13,11 @@ import random
 import string
 from tqdm import tqdm
 
+def parse_arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--proxy", action="store_true", help="Use a random proxy from the site")
+    return parser.parse_args()
+
 # Function to generate a random password
 def generate_password(length):
     letters_and_digits = string.ascii_letters + string.digits
@@ -38,6 +43,8 @@ def get_proxies():
     else:
         return []
 
+args = parse_arguments()
+
 # Create a new TempMail object
 print("Creating a new TempMail object...")
 tmp = TempMail()
@@ -51,11 +58,6 @@ signup_url = "https://beta.elevenlabs.io/sign-up"
 
 # Define the path to your chromedriver (change it according to your path)
 driver_path = "/Applications/Google Chrome.app/Contents/MacOS/chromedriver"
-
-# Parse command line arguments
-parser = argparse.ArgumentParser()
-parser.add_argument("--proxy", action="store_true", help="Use a random proxy from the site")
-args = parser.parse_args()
 
 # Set the proxy options for the Chrome driver
 chrome_options = webdriver.ChromeOptions()
