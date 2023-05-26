@@ -1,38 +1,45 @@
-# AutoLabs
+AutoLabs
 
-The AutoLabs is a Python script that automates the registration process on the Eleven Labs platform. It creates temporary email addresses, generates random passwords, and registers user accounts, verify account. The script provides the option to use a random proxy from a proxy site for added anonymity.
+AutoLabs is a Python project that automates the registration process for ElevenLabs using Selenium. It provides the option to register with a random proxy from a proxy site or without using a proxy.
+Features
 
-## Features
+    Automates the registration process for ElevenLabs
+    Option to register with a random proxy or without using a proxy
+    Generates a random password for each registration
+    Uses TempMail to generate temporary email addresses for confirmation emails
+    Retrieves the confirmation link from the confirmation email and visits it automatically
+    Saves the registered email, password, and confirmation link to a file
 
-- Automated registration on the Eleven Labs platform
-- Generates random passwords for user accounts
-- Uses temporary email addresses for registration confirmation
-- Supports the use of a random proxy from a proxy site (optional)
+Installation
 
-## Prerequisites
+    Clone the repository:
 
-- Python 3.x
-- Selenium
-- BeautifulSoup
-- Requests
-- tqdm
+    bash
 
-## Usage
+git clone https://github.com/Dreamzlol/AutoLabs.git
 
-1. Install the required dependencies: pip install selenium beautifulsoup4 requests tqdm
+Navigate to the project directory:
 
-2. Download the script `elevenlabs.py`.
+bash
 
-3. Run the script with the following command: python elevenlabs.py [--proxy]
+cd AutoLabs
 
-- Use the `--proxy` option to enable the use of a random proxy from a proxy site.
+Install the required dependencies:
 
-4. Follow the prompts and wait for the script to complete the registration process.
+    pip install -r requirements.txt
 
-## Configuration
+Usage
 
-- Make sure to set the correct path to the Chrome driver (`driver_path` variable) in the script.
+To register without using a proxy:
 
-## License
+python elevenlabs.py
 
-This project is licensed under the [MIT License](LICENSE).
+To register with a random proxy from the proxy site:
+
+css
+
+python elevenlabs.py --proxy
+
+License
+
+This project is licensed under the MIT License.
