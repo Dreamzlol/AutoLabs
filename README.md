@@ -1,38 +1,52 @@
 # AutoLabs
 
-The AutoLabs is a Python script that automates the registration process on the Eleven Labs platform. It creates temporary email addresses, generates random passwords, and registers user accounts, verify account. The script provides the option to use a random proxy from a proxy site for added anonymity.
+This is a Python script for generating accounts on ElevenLabs. It uses Selenium for automated registration and TempMail for temporary email generation. Optionally, you can specify a proxy for registration.
 
 ## Features
 
-- Automated registration on the Eleven Labs platform
-- Generates random passwords for user accounts
-- Uses temporary email addresses for registration confirmation
-- Supports the use of a random proxy from a proxy site (optional)
+- Automated registration on ElevenLabs
+- Random password generation
+- Optional proxy support
+- Confirmation email verification
+- Saving account details to a file
 
-## Prerequisites
+## Requirements
 
-- Python 3.x
-- Selenium
-- BeautifulSoup
-- Requests
-- tqdm
+- Python 3.6 or higher
+- Install the required packages using the following command:
+
+```shell
+pip install -r requirements.txt
+```
 
 ## Usage
 
-1. Install the required dependencies: pip install selenium beautifulsoup4 requests tqdm
+Clone the repository:
 
-2. Download the script `elevenlabs.py`.
+```shell
 
-3. Run the script with the following command: python elevenlabs.py [--proxy]
+git clone https://github.com/Dreamzlol/AutoLabs.git
+```
+Navigate to the project directory:
 
-- Use the `--proxy` option to enable the use of a random proxy from a proxy site.
+```shell
+cd AutoLabs
+```
+Install the required packages:
 
-4. Follow the prompts and wait for the script to complete the registration process.
+```shell
+pip install -r requirements.txt
+```
+Run the script without a proxy:
 
-## Configuration
+```shell
+python elevenlabs.py
+```
 
-- Make sure to set the correct path to the Chrome driver (`driver_path` variable) in the script.
+Run the script with a random proxy:
 
-## License
+```shell
+python elevenlabs.py --proxy
+```
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License. See the LICENSE file for details.
