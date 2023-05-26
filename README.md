@@ -53,7 +53,6 @@ The `driver_path` variable in the script should be updated with the path to your
 driver_path = "/path/to/your/chromedriver"
 ```
 
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+### Disclaimer
 
 This script is for educational purposes only. Use it responsibly.
