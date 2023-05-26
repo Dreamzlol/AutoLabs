@@ -1,45 +1,52 @@
-AutoLabs
+# AutoLabs
 
-AutoLabs is a Python project that automates the registration process for ElevenLabs using Selenium. It provides the option to register with a random proxy from a proxy site or without using a proxy.
-Features
+This is a Python script for generating accounts on ElevenLabs. It uses Selenium for automated registration and TempMail for temporary email generation. Optionally, you can specify a proxy for registration.
 
-    Automates the registration process for ElevenLabs
-    Option to register with a random proxy or without using a proxy
-    Generates a random password for each registration
-    Uses TempMail to generate temporary email addresses for confirmation emails
-    Retrieves the confirmation link from the confirmation email and visits it automatically
-    Saves the registered email, password, and confirmation link to a file
+## Features
 
-Installation
+- Automated registration on ElevenLabs
+- Random password generation
+- Optional proxy support
+- Confirmation email verification
+- Saving account details to a file
 
-    Clone the repository:
+## Requirements
 
-    bash
+- Python 3.6 or higher
+- Install the required packages using the following command:
+
+```shell
+pip install -r requirements.txt
+```
+
+## Usage
+
+Clone the repository:
+
+```shell
 
 git clone https://github.com/Dreamzlol/AutoLabs.git
-
+```
 Navigate to the project directory:
 
-bash
-
+```shell
 cd AutoLabs
+```
+Install the required packages:
 
-Install the required dependencies:
+```shell
+pip install -r requirements.txt
+```
+Run the script without a proxy:
 
-    pip install -r requirements.txt
-
-Usage
-
-To register without using a proxy:
-
+```shell
 python elevenlabs.py
+```
 
-To register with a random proxy from the proxy site:
+Run the script with a random proxy:
 
-css
-
+```shell
 python elevenlabs.py --proxy
+```
 
-License
-
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the LICENSE file for details.
