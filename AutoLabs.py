@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 def parse_arguments():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--proxy", action="store_true", help="Use a random proxy from the site")
+    parser.add_argument("--proxy", action="store_true", help="Use a random proxy from the site!")
     return parser.parse_args()
 
 # Function to generate a random password
